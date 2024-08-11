@@ -42,7 +42,7 @@ header {
     border: 4px solid #fff;
     position: absolute;
     top: 50%;
-    transform: translateY(-60%);
+    transform: translateY(-80%);
 }
 
 header h1 {
