@@ -28,6 +28,9 @@ header {
 
 .profile {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-img {
@@ -36,6 +39,10 @@ header {
     height: 150px;
     object-fit: cover;
     border: 4px solid #fff;
+    /* Centering the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
