@@ -42,14 +42,15 @@ header {
     object-fit: cover;
     border: 4px solid #fff;
     position: absolute;
-    top: 30px; /* Adjusted to move the image up */
-    transform: translateY(-50%); /* Keeps the image centered */
+    top: 20px; /* Move image upwards */
+    transform: translateY(-50%);
 }
 
 header h1 {
-    margin: 160px 0 10px; /* Spacing to accommodate the profile image */
+    margin: 120px 0 10px; /* Increased top margin to move text down slightly */
     font-size: 2.5em;
 }
+
 
 header p {
     font-size: 1.2em;
