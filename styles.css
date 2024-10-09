@@ -43,22 +43,31 @@ header {
     position: relative;
 }
 
+.profile {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 20px; /* Optional: Adds space above the profile */
+}
+
 .profile-img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
     border: 4px solid #fff;
-    margin-bottom: 10px; /* Add space between image and name */
+    margin-bottom: -10px; /* Pulls image up, adjust this value as needed */
 }
 
 header h1 {
-    margin: 0; /* Remove top margin */
+    margin: 10px 0 5px; /* Space above and below the name */
     font-size: 2.5em;
 }
 
 header p {
-    margin: 5px 0 0; /* Add slight margin to separate description */
+    margin: 5px 0; /* Space below the description */
 }
 
 
