@@ -35,25 +35,32 @@ header {
     position: relative;
 }
 
+.profile {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 .profile-img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
     border: 4px solid #fff;
-    position: absolute;
-    top: 10px; /* Move image further up */
-    transform: translateY(-50%);
+    margin-bottom: 10px; /* Add space between image and name */
 }
 
 header h1 {
-    margin: 10px 0 0; /* Remove margin above the name */
+    margin: 0; /* Remove top margin */
     font-size: 2.5em;
 }
 
 header p {
-    margin: 5px 0 0; /* Remove margin above the description */
+    margin: 5px 0 0; /* Add slight margin to separate description */
 }
+
 
 
 nav ul {
