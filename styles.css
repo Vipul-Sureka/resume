@@ -42,8 +42,8 @@ header {
     object-fit: cover;
     border: 4px solid #fff;
     position: absolute;
-    top: 50px; /* Adjusted for better alignment */
-    transform: translateY(50%); /* Moves the image slightly lower */
+    top: 30px; /* Adjusted to move the image up */
+    transform: translateY(-50%); /* Keeps the image centered */
 }
 
 header h1 {
