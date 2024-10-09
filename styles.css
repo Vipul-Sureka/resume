@@ -1,4 +1,3 @@
-/* Reset default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-    position: relative;
 }
 
 .container {
@@ -33,7 +31,7 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 20px; /* Optional: Adds space above the profile */
+    padding-top: 40px; /* Adjust space above profile section */
 }
 
 .profile-img {
@@ -42,11 +40,11 @@ header {
     height: 150px;
     object-fit: cover;
     border: 4px solid #fff;
-    margin-bottom: -10px; /* Pulls image up, adjust this value as needed */
+    margin-bottom: -20px; /* Adjust this value as needed */
 }
 
 header h1 {
-    margin: 10px 0 5px; /* Space above and below the name */
+    margin: 10px 0; /* Space above and below the name */
     font-size: 2.5em;
 }
 
@@ -54,12 +52,9 @@ header p {
     margin: 5px 0; /* Space below the description */
 }
 
-
-
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
 }
 
 nav ul li {
@@ -71,13 +66,10 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 4px;
-    background-color: #555;
 }
 
 nav ul li a:hover {
-    background-color: #777;
+    text-decoration: underline;
 }
 
 main {
@@ -115,8 +107,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-footer p {
-    margin: 0;
 }
