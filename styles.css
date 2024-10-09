@@ -48,8 +48,10 @@ header {
     height: 150px;
     object-fit: cover;
     border: 4px solid #fff;
-    margin-top: -25px; /* Adjust this value to move the image down inside the circle */
+    position: relative; /* Use relative positioning */
+    top: 10px; /* Move the image down slightly */
 }
+
 
 
 
