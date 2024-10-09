@@ -50,7 +50,7 @@ header {
     width: 150px;  /* Keep this value the same */
     height: 150px; /* Keep this value the same */
     object-fit: cover;
-    object-position: center 40%; /* Adjust this to move the image down */
+    object-position: center 5%; /* Adjust this to move the image down */
     border: 4px solid #fff;
 }
 
