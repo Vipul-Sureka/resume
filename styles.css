@@ -40,8 +40,11 @@ header {
     height: 150px;
     object-fit: cover;
     border: 4px solid #fff;
-    margin-bottom: -20px; /* Adjust this value as needed */
+    position: absolute;
+    top: 35%; /* Adjusted value */
+    transform: translateY(-50%); /* Adjusted for centering */
 }
+
 
 header h1 {
     margin: 10px 0; /* Space above and below the name */
