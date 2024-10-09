@@ -41,7 +41,7 @@ header {
     object-fit: cover;
     border: 4px solid #fff;
     position: relative; /* Maintain relative positioning */
-    top: -75px; /* Adjust this value to move the image down within the circle */
+    top: -15px; /* Adjust this value to move the image down within the circle */
 }
 
 
