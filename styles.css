@@ -42,21 +42,19 @@ header {
     object-fit: cover;
     border: 4px solid #fff;
     position: absolute;
-    top: 20px; /* Move image upwards */
+    top: 10px; /* Move image further up */
     transform: translateY(-50%);
 }
 
 header h1 {
-    margin: 120px 0 10px; /* Increased top margin to move text down slightly */
+    margin: 10px 0 0; /* Remove margin above the name */
     font-size: 2.5em;
 }
 
-
 header p {
-    font-size: 1.2em;
-    color: #ddd;
-    margin-bottom: 20px;
+    margin: 5px 0 0; /* Remove margin above the description */
 }
+
 
 nav ul {
     list-style: none;
