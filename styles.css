@@ -17,10 +17,12 @@ header {
     background-color: #292b2c; /* Darker header */
     color: #fff;
     padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Header shadow */
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Wider container */
+    max-width: 1200px; /* Max width */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -29,12 +31,12 @@ header {
 }
 
 .profile {
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increased space */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 40px; /* Adjust space above profile section */
+    padding-top: 40px;
 }
 
 .profile-img {
@@ -42,12 +44,13 @@ header {
     width: 150px; 
     height: 150px; 
     object-fit: cover;
-    object-position: 25% 0.5%; 
+    object-position: center; /* Center the image */
     border: 4px solid #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Profile image shadow */
 }
 
 header h1 {
-    margin: 10px 0; 
+    margin: 15px 0; 
     font-size: 2.5em;
 }
 
@@ -62,42 +65,44 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px; /* Increased margin */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s; /* Transition for color change */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
     color: #ffcc00; /* Highlight color */
 }
 
 main {
     padding: 20px;
-    width: 80%;
+    width: 90%; /* Wider main content */
     margin: 0 auto;
 }
 
 .section {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Add transition */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition */
 }
 
 .section:hover {
     transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .section h2 {
-    margin-bottom: 10px;
-    font-size: 2em;
+    margin-bottom: 15px; /* Increased space */
+    font-size: 2.2em; /* Slightly larger font */
+    color: #292b2c; /* Darker heading color */
 }
 
 ul {
@@ -105,32 +110,35 @@ ul {
 }
 
 ul li {
-    padding: 10px 0;
+    padding: 15px 0; /* Increased padding */
+    border-bottom: 1px solid #eaeaea; /* Divider between items */
 }
 
-.download-icon {
-    position: relative;
-    display: inline-block;
-    float: right; /* Align to the right */
-    margin-top: -30px; /* Position it above the text */
-}
-
-.download-icon a {
-    color: #555; /* Icon color */
-    font-size: 24px; /* Icon size */
-    text-decoration: none;
-}
-
-.download-icon:hover a {
-    color: #007bff; /* Change color on hover */
+ul li:last-child {
+    border-bottom: none; /* Remove divider from last item */
 }
 
 footer {
     background-color: #292b2c; /* Darker footer */
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px; /* Increased padding */
+    position: relative; /* Change to relative */
+    margin-top: 20px; /* Add margin above footer */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Footer shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px; /* Smaller margin on mobile */
+    }
+
+    .section {
+        padding: 20px; /* Less padding on mobile */
+    }
+
+    header h1 {
+        font-size: 2em; /* Smaller header font on mobile */
+    }
 }
