@@ -108,21 +108,31 @@ ul li {
     padding: 10px 0;
 }
 
-.download-icon {
-    position: relative;
-    display: inline-block;
-    float: right; /* Align to the right */
-    margin-top: -30px; /* Position it above the text */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center tiles */
+    margin-top: 20px; /* Space above */
 }
 
-.download-icon a {
-    color: #555; /* Icon color */
-    font-size: 24px; /* Icon size */
-    text-decoration: none;
+.skill-tile {
+    background-color: #f8f9fa; /* Tile background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 10px; /* Space between tiles */
+    padding: 20px; /* Padding inside tiles */
+    text-align: center; /* Center text */
+    width: 150px; /* Fixed width for tiles */
+    transition: transform 0.3s; /* Transition for hover effect */
 }
 
-.download-icon:hover a {
-    color: #007bff; /* Change color on hover */
+.skill-tile:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.skill-logo {
+    font-size: 50px; /* Adjusted logo size */
+    margin-bottom: 10px; /* Space below logo */
 }
 
 footer {
@@ -133,4 +143,16 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill tiles */
+        align-items: center; /* Center alignment */
+    }
 }
