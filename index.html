@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vipul Sureka's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -24,6 +23,7 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="resume.html">Resume</a></li> <!-- Link to new resume page -->
+                    <li><a href="#projects">Personal Projects</a></li> <!-- Link to projects section -->
                 </ul>
             </nav>
         </div>
@@ -47,27 +47,31 @@
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skill-tile">
-                    <i class="fab fa-python skill-logo"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/data-science.png" alt="Data Science">
+                    <p>Data Science</p>
+                </div>
+                <div class="skill-tile">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/python.png" alt="Python">
                     <p>Python</p>
                 </div>
                 <div class="skill-tile">
-                    <i class="fas fa-database skill-logo"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" alt="SQL">
                     <p>SQL</p>
                 </div>
                 <div class="skill-tile">
-                    <i class="fas fa-chart-bar skill-logo"></i>
-                    <p>Power BI</p>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/power-bi.png" alt="PowerBI">
+                    <p>PowerBI</p>
                 </div>
                 <div class="skill-tile">
-                    <i class="fas fa-robot skill-logo"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/machine-learning.png" alt="Machine Learning">
                     <p>Machine Learning</p>
                 </div>
                 <div class="skill-tile">
-                    <i class="fas fa-file-excel skill-logo"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/excel.png" alt="Excel">
                     <p>Excel</p>
                 </div>
                 <div class="skill-tile">
-                    <i class="fab fa-microsoft skill-logo"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/azure.png" alt="Azure">
                     <p>Azure</p>
                 </div>
             </div>
@@ -89,6 +93,36 @@
             </ul>
         </section>
 
+        <section id="projects" class="section">
+            <h2>Personal Projects</h2>
+            <div class="projects-container">
+                <div class="project-tile">
+                    <img src="https://via.placeholder.com/200x150?text=Web+Scraping" alt="Web Scraping" class="project-image">
+                    <h3>Web Scraping</h3>
+                    <p>Automated data extraction from websites using Python and BeautifulSoup.</p>
+                    <a href="projects/web-scraping.html" class="know-more">Know More</a>
+                </div>
+                <div class="project-tile">
+                    <img src="https://via.placeholder.com/200x150?text=Olympics+Dataset+Analysis" alt="Olympics Dataset Analysis" class="project-image">
+                    <h3>Olympics Dataset Analysis</h3>
+                    <p>In-depth analysis of Olympic Games data using Python and Pandas.</p>
+                    <a href="projects/olympics-dataset.html" class="know-more">Know More</a>
+                </div>
+                <div class="project-tile">
+                    <img src="https://via.placeholder.com/200x150?text=EDA+on+IPL+Dataset" alt="EDA on IPL Dataset" class="project-image">
+                    <h3>EDA on IPL Dataset</h3>
+                    <p>Exploratory data analysis on the Indian Premier League dataset.</p>
+                    <a href="projects/ipl-eda.html" class="know-more">Know More</a>
+                </div>
+                <div class="project-tile">
+                    <img src="https://via.placeholder.com/200x150?text=Autonomous+Vehicle+System" alt="Autonomous Vehicle System" class="project-image">
+                    <h3>Autonomous Vehicle System</h3>
+                    <p>Developed a model for vehicle navigation using machine learning techniques.</p>
+                    <a href="projects/autonomous-vehicle.html" class="know-more">Know More</a>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <h2>Contact</h2>
             <ul>
@@ -96,6 +130,7 @@
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/vipulsureka/" target="_blank">LinkedIn Profile</a></li>
             </ul>
         </section>
+        
     </main>
 
     <footer>
