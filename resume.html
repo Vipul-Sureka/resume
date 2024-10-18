@@ -18,8 +18,9 @@
             position: relative;
             width: 100%;
             max-width: 800px; /* Adjust as needed */
-            height: 100vh;
+            height: 90vh; /* Make room for the icon */
             overflow: auto;
+            border: 1px solid #ccc; /* Optional: Add a border */
         }
         .download-icon {
             position: absolute;
@@ -39,12 +40,11 @@
 <body>
     <div class="pdf-container">
         <div class="download-icon" title="Download Resume">
-            <a href="https://raw.githubusercontent.com/Vipul-Sureka/resume/refs/heads/main/Vipul_Sureka_SeniorDataAnalyst.pdf" download>
-
+            <a href="https://raw.githubusercontent.com/username/repository/branch/path/to/cv.pdf" download>
                 <i class="fas fa-download"></i>
             </a>
         </div>
-        <iframe src="https://raw.githubusercontent.com/Vipul-Sureka/resume/refs/heads/main/Vipul_Sureka_SeniorDataAnalyst.pdf" width="100%" height="100%"></iframe>
+        <iframe src="https://raw.githubusercontent.com/username/repository/branch/path/to/cv.pdf" width="100%" height="100%" frameborder="0"></iframe>
     </div>
 </body>
 </html>
