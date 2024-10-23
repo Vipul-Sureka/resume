@@ -10,7 +10,9 @@
         .skills-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center; /* Center the tiles */
+            max-width: 600px; /* Limit width for symmetry */
+            margin: auto; /* Center the container */
         }
         .skill-tile {
             display: flex;
@@ -21,7 +23,7 @@
             margin: 10px; /* Add some space between tiles */
             text-align: center;
         }
-        .skill-tile img {
+        .skill-tile img, .skill-tile i {
             width: 50px; /* Set uniform width */
             height: 50px; /* Set uniform height */
         }
