@@ -13,8 +13,12 @@
             object-fit: cover; /* Optionally, to ensure the images fit well */
         }
 
+        #im-text {
+            color: white; /* Keep "I'm" white */
+        }
+
         #dynamic-text {
-            color: red; /* Set the text color to red */
+            color: red; /* Set the dynamic text color to red */
         }
     </style>
 </head>
@@ -24,7 +28,8 @@
             <div class="profile">
                 <img src="dp.png" alt="Profile Picture" class="profile-img">
                 <h1>
-                    <span id="dynamic-text">I'm </span>
+                    <span id="im-text">I'm </span>
+                    <span id="dynamic-text">Vipul Sureka</span>
                 </h1>
                 <p>Consultant at Deloitte | Data Science Enthusiast</p>
             </div>
@@ -43,7 +48,7 @@
         </div>
     </header>
     <script>
-        const texts = ["Vipul Sureka.", "a Data Professional."];
+        const texts = ["Vipul Sureka", "a Data Professional"];
         let index = 0;
         let charIndex = 0;
         const speed = 150; // typing speed
@@ -52,7 +57,7 @@
         function type() {
             const currentText = texts[index];
             if (charIndex < currentText.length) {
-                dynamicTextElement.textContent = "I'm " + currentText.substring(0, charIndex + 1);
+                dynamicTextElement.textContent = currentText.substring(0, charIndex + 1);
                 charIndex++;
                 setTimeout(type, speed);
             } else {
@@ -63,7 +68,7 @@
         function deleteText() {
             const currentText = texts[index];
             if (charIndex > 0) {
-                dynamicTextElement.textContent = "I'm " + currentText.substring(0, charIndex - 1);
+                dynamicTextElement.textContent = currentText.substring(0, charIndex - 1);
                 charIndex--;
                 setTimeout(deleteText, speed);
             } else {
