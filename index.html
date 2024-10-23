@@ -12,6 +12,12 @@
             height: auto; /* Maintain aspect ratio */
             object-fit: cover; /* Optionally, to ensure the images fit well */
         }
+        .dynamic-text {
+            display: inline-block;
+            border-right: 2px solid black; /* Cursor effect */
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflowing text */
+        }
     </style>
 </head>
 <body>
@@ -19,7 +25,7 @@
         <div class="container">
             <div class="profile">
                 <img src="dp.png" alt="Profile Picture" class="profile-img">
-                <h1>Vipul Sureka</h1>
+                <h1 class="dynamic-text" id="dynamic-text"></h1>
                 <p>Consultant at Deloitte | Data Science Enthusiast</p>
             </div>
             <nav>
@@ -36,6 +42,38 @@
             </nav>
         </div>
     </header>
+
+    <script>
+        const texts = ["I'm Vipul Sureka", "I'm a Data Professional"];
+        let index = 0;
+        let charIndex = 0;
+        const speed = 150; // typing speed
+        const dynamicTextElement = document.getElementById("dynamic-text");
+
+        function type() {
+            if (charIndex < texts[index].length) {
+                dynamicTextElement.textContent += texts[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, speed);
+            } else {
+                setTimeout(deleteText, speed * 2); // wait before deleting
+            }
+        }
+
+        function deleteText() {
+            if (charIndex > 0) {
+                dynamicTextElement.textContent = texts[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(deleteText, speed);
+            } else {
+                index = (index + 1) % texts.length; // switch to next text
+                setTimeout(type, speed); // start typing again
+            }
+        }
+
+        // Start typing effect
+        type();
+    </script>
     
     <main>
         <section id="home" class="section">
