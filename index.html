@@ -10,7 +10,11 @@
         .skill-tile img {
             width: 50px; /* Set uniform width */
             height: 50px; /* Set uniform height */
-            filter: grayscale(100%); /* Make the Azure icon black */
+        }
+        .azure-icon {
+            width: 50px; /* Ensure uniform size */
+            height: 50px; /* Ensure uniform size */
+            filter: none; /* Remove grayscale filter for black color */
         }
     </style>
 </head>
@@ -79,7 +83,7 @@
                     <p>Excel</p>
                 </div>
                 <div class="skill-tile">
-                    <img src="https://arunpotti.com/wp-content/uploads/2021/12/microsoft_azure.svg_.png" alt="Azure" style="filter: grayscale(100%);"> <!-- Azure -->
+                    <img src="https://arunpotti.com/wp-content/uploads/2021/12/microsoft_azure.svg_.png" alt="Azure" class="azure-icon"> <!-- Azure -->
                     <p>Azure</p>
                 </div>
             </div>
