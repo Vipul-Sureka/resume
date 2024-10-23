@@ -28,6 +28,20 @@ header {
     text-align: center;
 }
 
+      .project-image {
+            width: 300px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Optionally, to ensure the images fit well */
+        }
+
+        #im-text {
+            color: white; /* Keep "I'm" white */
+        }
+
+        #dynamic-text {
+            color: red; /* Set the dynamic text color to red */
+        }
+
 .profile {
     margin-bottom: 20px;
     display: flex;
