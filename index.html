@@ -378,10 +378,12 @@
     </section>
 
  <!-- Experience Section -->
-<section id="experience" class="py-24 relative">
+<section id="experience" class="py-24 relative bg-black">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20 reveal">
-            <h2 class="text-3xl md:text-4xl font-bold">Professional Journey</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+                Professional Journey
+            </h2>
         </div>
 
         <div class="relative flex gap-16">
@@ -390,27 +392,35 @@
             <div class="relative w-24 flex justify-center">
 
                 <!-- Left Rope -->
-                <div class="absolute left-2 top-0 bottom-0 w-2 rounded-full bg-gradient-to-b from-yellow-700 via-yellow-800 to-yellow-900 shadow-inner"></div>
-
-                <!-- Right Rope -->
-                <div class="absolute right-2 top-0 bottom-0 w-2 rounded-full bg-gradient-to-b from-yellow-700 via-yellow-800 to-yellow-900 shadow-inner"></div>
-
-                <!-- Rungs -->
-                <div class="relative flex flex-col justify-between h-full py-8">
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
-                    <div class="w-16 h-3 rounded bg-gradient-to-b from-yellow-300 to-yellow-600 shadow-md"></div>
+                <div class="absolute left-3 top-0 bottom-0 w-[6px] rounded-full
+                    bg-gradient-to-b from-slate-400 via-slate-600 to-slate-800
+                    shadow-[inset_0_0_6px_rgba(0,0,0,0.8)]">
                 </div>
 
-                <!-- PERSON AT PRESENT -->
-                <div class="absolute top-4 left-1/2 -translate-x-1/2 text-data-accent text-4xl animate-pulse">
+                <!-- Right Rope -->
+                <div class="absolute right-3 top-0 bottom-0 w-[6px] rounded-full
+                    bg-gradient-to-b from-slate-400 via-slate-600 to-slate-800
+                    shadow-[inset_0_0_6px_rgba(0,0,0,0.8)]">
+                </div>
+
+                <!-- Rungs -->
+                <div class="relative flex flex-col justify-between h-full py-10">
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-600 via-slate-400 to-slate-600 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-600 via-slate-400 to-slate-600 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-700 via-slate-500 to-slate-700 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-700 via-slate-500 to-slate-700 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 shadow-md"></div>
+                    <div class="w-14 h-[6px] rounded-sm bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 shadow-md"></div>
+                </div>
+
+                <!-- PRESENT MARKER -->
+                <div class="absolute top-6 left-1/2 -translate-x-1/2
+                    text-cyan-400 text-4xl drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]
+                    animate-pulse">
                     <i class="fas fa-person-sitting"></i>
                 </div>
             </div>
@@ -418,66 +428,62 @@
             <!-- CONTENT -->
             <div class="flex-1 space-y-20">
 
-                <!-- Consultant -->
                 <div class="reveal">
                     <h3 class="text-2xl font-bold text-white">Consultant</h3>
-                    <p class="text-data-accent text-lg">Deloitte</p>
-                    <span class="inline-block mt-3 text-sm font-mono text-gray-400 bg-slate-800 px-3 py-1 rounded-full">
+                    <p class="text-cyan-400">Deloitte</p>
+                    <span class="inline-block mt-3 text-sm font-mono text-cyan-300/70 bg-slate-900 px-3 py-1 rounded-full">
                         2022 – Present
                     </span>
                     <p class="mt-4 text-gray-300 leading-relaxed">
-                        Developed complex financial models in Excel and VBA. Automated reporting processes using SQL and Python.
-                        Assisted in cloud infrastructure setup on Azure.
+                        Developed complex financial models, automated reporting pipelines,
+                        and delivered cloud-enabled analytics solutions using SQL, Python, and Azure.
                     </p>
                 </div>
 
-                <!-- Analyst -->
                 <div class="reveal">
                     <h3 class="text-2xl font-bold text-white">Analyst</h3>
-                    <p class="text-data-accent text-lg">Deloitte</p>
-                    <span class="inline-block mt-3 text-sm font-mono text-gray-400 bg-slate-800 px-3 py-1 rounded-full">
+                    <p class="text-cyan-400">Deloitte</p>
+                    <span class="inline-block mt-3 text-sm font-mono text-cyan-300/70 bg-slate-900 px-3 py-1 rounded-full">
                         2020 – 2022
                     </span>
                     <p class="mt-4 text-gray-300 leading-relaxed">
-                        Focused on data cleaning, validation, and building foundational PowerBI dashboards.
+                        Built strong foundations in data validation, transformation,
+                        and dashboarding using PowerBI for audit and advisory clients.
                     </p>
                 </div>
 
-                <!-- BTech -->
                 <div class="reveal">
                     <h3 class="text-2xl font-bold text-white">B.Tech – Mechanical Engineering</h3>
-                    <p class="text-data-accent text-lg">Manipal Institute of Technology, Manipal</p>
-                    <span class="inline-block mt-3 text-sm font-mono text-gray-400 bg-slate-800 px-3 py-1 rounded-full">
+                    <p class="text-cyan-400">Manipal Institute of Technology, Manipal</p>
+                    <span class="inline-block mt-3 text-sm font-mono text-cyan-300/70 bg-slate-900 px-3 py-1 rounded-full">
                         2016 – 2020
                     </span>
                     <p class="mt-4 text-gray-300 leading-relaxed">
-                        Strong foundation in engineering, analytics, and problem-solving.  
+                        Built analytical and systems-thinking foundations alongside core engineering principles.
                         <span class="text-gray-400">CGPA: 8.32</span>
                     </p>
                 </div>
 
-                <!-- Tata Steel -->
                 <div class="reveal">
                     <h3 class="text-2xl font-bold text-white">Engineering Trainee</h3>
-                    <p class="text-data-accent text-lg">Tata Steel, Jamshedpur</p>
-                    <span class="inline-block mt-3 text-sm font-mono text-gray-400 bg-slate-800 px-3 py-1 rounded-full">
+                    <p class="text-cyan-400">Tata Steel, Jamshedpur</p>
+                    <span class="inline-block mt-3 text-sm font-mono text-cyan-300/70 bg-slate-900 px-3 py-1 rounded-full">
                         Jun 2019 – Jul 2019
                     </span>
                     <p class="mt-4 text-gray-300 leading-relaxed">
-                        Worked in mills maintenance to improve reliability of pneumatic systems in the CRM area.
+                        Improved pneumatic system reliability in CRM operations through hands-on industrial exposure.
                     </p>
                 </div>
 
-                <!-- RUGVED -->
                 <div class="reveal">
                     <h3 class="text-2xl font-bold text-white">Electrical & Electronics Engineer</h3>
-                    <p class="text-data-accent text-lg">RUGVED Systems, Manipal</p>
-                    <span class="inline-block mt-3 text-sm font-mono text-gray-400 bg-slate-800 px-3 py-1 rounded-full">
+                    <p class="text-cyan-400">RUGVED Systems, Manipal</p>
+                    <span class="inline-block mt-3 text-sm font-mono text-cyan-300/70 bg-slate-900 px-3 py-1 rounded-full">
                         2017 – 2019
                     </span>
                     <p class="mt-4 text-gray-300 leading-relaxed">
-                        Led vehicle electronics architecture including sensors, motor controllers,
-                        embedded systems, EMI-safe PCB design, diagnostics, and telemetry.
+                        Designed and integrated vehicle electronics including sensors,
+                        embedded systems, EMI-safe PCBs, telemetry, and diagnostics.
                     </p>
                 </div>
 
