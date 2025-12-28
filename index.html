@@ -202,7 +202,9 @@
 <section id="about" class="py-20 relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-start">
-       <div class="reveal">
+
+      <!-- Left Column -->
+      <div class="reveal">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
         <div class="h-1 w-20 bg-data-accent rounded mb-6"></div>
         
@@ -226,9 +228,14 @@
           <span class="px-3 py-1 rounded bg-slate-800 border border-slate-700 text-sm font-mono text-gray-300">Data Viz Expert</span>
         </div>
       </div>
-      
-     <div class="reveal relative ml-2 flex flex-col justify-start" style="margin-top: 404px;">
-        <!-- Abstract Data Representation -->
+
+      <!-- Right Column -->
+      <div class="reveal relative ml-2 flex flex-col justify-start" style="margin-top: 404px;">
+
+        <!-- Profile Picture -->
+        <img src="profile.png" alt="Profile Picture" class="w-32 h-32 rounded-full mb-6 mx-auto">
+
+        <!-- Abstract Data Representation (JSON box) -->
         <div class="glass-card p-8 rounded-2xl relative z-10 animate-float" style="min-width: 220px; max-width: 300px;">
           <div class="flex items-center justify-between mb-4 border-b border-gray-700 pb-2">
             <span class="font-mono text-sm text-gray-400">profile_stats.json</span>
@@ -257,14 +264,15 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Decorative background blob -->
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-data-accent/20 rounded-full blur-3xl -z-10"></div>
       </div>
-      
+
     </div>
   </div>
 </section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-slate-900/50">
