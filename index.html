@@ -540,7 +540,10 @@
 
     <!-- Footer -->
     <footer class="py-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+    
         <p>&copy; 2020 Data Consultant Portfolio. Built with Data & Passion.</p>
+        <p id="last-updated" class="text-gray-400 text-xs mt-1"></p>
+
     </footer>
 
     <!-- Scripts -->
@@ -760,6 +763,15 @@
   type(); // start typing
 </script>
 
+<script>
+  function updateLastUpdated() {
+    const options = { timeZone: 'Asia/Kolkata', year: 'numeric', month: 'long', day: 'numeric' };
+    const date = new Date().toLocaleDateString('en-IN', options);
+    document.getElementById('last-updated').textContent = "Last Updated: " + date + " (IST)";
+  }
+
+  updateLastUpdated();
+</script>
 
 
 
