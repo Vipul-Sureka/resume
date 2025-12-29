@@ -175,8 +175,8 @@
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
                 Turning Raw Data into <br>
-                <span class="text-gradient">Strategic Intelligence</span>
-            </h1>
+                <span class="text-gradient dynamic-text" id="dynamic-text"></span>
+            </h1>                  
             <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-300 font-light">
                 Turning Raw Data into Strategic Intelligence.
             </p>
@@ -717,5 +717,52 @@
         });
 
     </script>
+
+
+
+
+    
+    <script>
+  const words = ["Insights", "Solutions", "Decisions", "Opportunities"]; // Words to cycle
+  const dynamicText = document.getElementById("dynamic-text");
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingSpeed = 100; // ms per character
+  const deletingSpeed = 50; // ms per character
+  const delayBetweenWords = 2000; // pause after a word is typed
+
+  function type() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      charIndex--;
+      dynamicText.textContent = currentWord.slice(0, charIndex);
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 200);
+      } else {
+        setTimeout(type, deletingSpeed);
+      }
+    } else {
+      charIndex++;
+      dynamicText.textContent = currentWord.slice(0, charIndex);
+      if (charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, delayBetweenWords);
+      } else {
+        setTimeout(type, typingSpeed);
+      }
+    }
+  }
+
+  type(); // start typing
+</script>
+
+
+
+
+    
 </body>
 </html>
